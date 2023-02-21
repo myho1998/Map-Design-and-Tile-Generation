@@ -8,6 +8,7 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
 
     <style>
+        
         body {
             margin: 0;
             padding: 0;
@@ -65,6 +66,30 @@
         #menu a.active:hover {
             background: #3074a4;
         }
+            
+#title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25pt;
+    color: rgb(5, 71, 16)
+}
+
+
+#subtitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 70px;
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15pt;
+    color: rgb(44, 51, 26)
+}
+        
     </style>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
 </head>
@@ -72,6 +97,12 @@
 <body>
     <nav id="menu"></nav>
     <div id='map'></div>
+    <div id="title">
+        Bangkok and Noise Pollution
+    </div>
+    <div id="subtitle">
+        This is Bangkok under four different tilesets. Each tile will show a specific element by different color layers.
+    </div>
     <script type="text/javascript">
         mapboxgl.accessToken =
             'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
